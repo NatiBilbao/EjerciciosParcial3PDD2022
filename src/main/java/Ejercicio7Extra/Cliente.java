@@ -2,7 +2,7 @@ package Ejercicio7Extra;
 
 public class Cliente {
     public static void main(String[] args){
-        // SERVIVIO TECNICO
+        // SERVICIO TECNICO
         Laptop laptop = new Laptop(16);
         PC pc = new PC(30);
         Tablet tablet = new Tablet(17);
