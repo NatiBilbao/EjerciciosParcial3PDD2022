@@ -1,4 +1,4 @@
-package ejercicio1Decorator;
+package Ejercicio1Decorator;
 
 public class Personaje implements IWarcraft {
     private String nombre;

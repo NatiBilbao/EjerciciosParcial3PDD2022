@@ -1,4 +1,4 @@
-package ejercicio1Decorator;
+package Ejercicio1Decorator;
 
 public class AgregarEscudo implements IWarcraft {
     private IWarcraft warcraft;

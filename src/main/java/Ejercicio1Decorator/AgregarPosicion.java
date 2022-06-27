@@ -1,12 +1,11 @@
-package ejercicio1Decorator;
+package Ejercicio1Decorator;
 
-public class AgregarPersonaje implements IWarcraft {
+public class AgregarPosicion implements IWarcraft {
     private IWarcraft warcraft;
-    private String armas;
 
-    public AgregarPersonaje(IWarcraft warcraft, String armas) {
+    public AgregarPosicion(IWarcraft warcraft) {
         this.warcraft = warcraft;
-        this.darArmas(armas);
+        this.aumentarPuntosRegeneracion(80);
     }
 
     @Override
@@ -36,9 +35,7 @@ public class AgregarPersonaje implements IWarcraft {
 
     @Override
     public void darArmas(String arma) {
-        warcraft.darArmas(arma);
-        warcraft.aumentarPuntosAtaque(30);
-        warcraft.subirNivel(warcraft.nivel()*2);
+        warcraft.subirNivel(warcraft.nivel());
     }
 
     @Override
@@ -83,7 +80,7 @@ public class AgregarPersonaje implements IWarcraft {
 
     @Override
     public void showInfo() {
-        System.out.println("******* SE AGREGO UN PERSONAJE *******");
+        System.out.println("******* SE AGREGO UNA POSICION *******");
         warcraft.showInfo();
     }
 }

@@ -1,4 +1,4 @@
-package ejercicio1Decorator;
+package Ejercicio1Decorator;
 
 public class Cliente {
     public static void main(String[] args) {

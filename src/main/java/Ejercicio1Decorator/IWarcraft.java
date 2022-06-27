@@ -1,4 +1,4 @@
-package ejercicio1Decorator;
+package Ejercicio1Decorator;
 
 public interface IWarcraft {
     String nombre();
